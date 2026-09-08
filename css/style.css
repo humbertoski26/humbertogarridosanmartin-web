@@ -502,6 +502,38 @@ a { color: inherit; }
   line-height: 1.4;
 }
 
+/* Hobby */
+.route-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.route-tag {
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 999px;
+}
+
+.hobby-gallery {
+  column-count: 3;
+  column-gap: 16px;
+  margin-top: 32px;
+}
+
+.hobby-gallery img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 16px;
+  break-inside: avoid;
+}
+
 /* Contact */
 .contact-section { text-align: center; }
 .contact-inner { display: flex; flex-direction: column; align-items: center; }
@@ -556,10 +588,12 @@ a { color: inherit; }
   .press-item { flex-direction: column; gap: 4px; }
   .press-outlet { width: auto; }
   .video-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+  .hobby-gallery { column-count: 2; }
 }
 
 @media (max-width: 480px) {
   .video-grid { grid-template-columns: 1fr; }
+  .hobby-gallery { column-count: 1; }
 }
 
 @media (max-width: 480px) {
