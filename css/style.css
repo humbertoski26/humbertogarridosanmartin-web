@@ -205,6 +205,7 @@ a { color: inherit; }
   color: var(--ink-soft);
   max-width: 72ch;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 /* Stats */
@@ -297,6 +298,7 @@ a { color: inherit; }
 .timeline-content p {
   color: var(--ink-soft);
   font-size: 0.95rem;
+  text-align: justify;
 }
 
 /* Education */
@@ -500,6 +502,53 @@ a { color: inherit; }
   font-weight: 500;
   color: var(--ink);
   line-height: 1.4;
+}
+
+/* Blog */
+.blog-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.blog-post {
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.blog-date {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin-bottom: 10px;
+  display: block;
+}
+
+.blog-post h3 {
+  font-size: 1.35rem;
+  margin: 0 0 14px;
+}
+
+.blog-post p {
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+  line-height: 1.7;
+  text-align: justify;
+  margin: 0 0 14px;
+}
+
+.blog-post p:last-child { margin-bottom: 0; }
+
+.blog-empty {
+  text-align: center;
+  padding: 56px 24px;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  color: var(--ink-soft);
 }
 
 /* Hobby */
