@@ -382,6 +382,21 @@ a { color: inherit; }
   margin: 0;
 }
 
+/* Projects */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.card-link {
+  display: block;
+  text-decoration: none;
+  transition: border-color 0.2s;
+}
+
+.card-link:hover { border-color: var(--accent); }
+
 /* Press */
 .press-photo {
   width: 100%;
@@ -633,6 +648,7 @@ a { color: inherit; }
   }
   .grid-2 { grid-template-columns: 1fr; gap: 32px; }
   .cards { grid-template-columns: 1fr 1fr; }
+  .projects { grid-template-columns: 1fr; }
   .stats { grid-template-columns: 1fr; }
   .press-item { flex-direction: column; gap: 4px; }
   .press-outlet { width: auto; }
